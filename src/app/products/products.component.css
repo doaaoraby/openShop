@@ -1,0 +1,29 @@
+.card {
+    max-width: 200px;
+    text-align: right;
+    border:1px outset black ; height:190px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  .data{
+    text-align: center;
+
+  }
+  .img-style{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;width: 100px;
+  }
+  .prodData{
+    width: 200px;height:50px;border: 5px red;
+    background-color: gainsboro;    
+    text-align: center;padding-top: 10px; padding-bottom:10px
+  }
+ .container{
+     display:flex;
+     flex-direction:row;
+ }

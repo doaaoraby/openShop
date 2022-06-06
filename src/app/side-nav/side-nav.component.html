@@ -1,0 +1,23 @@
+<!-- <mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened>Drawer content</mat-drawer>
+    <mat-drawer-content>
+        <app-products></app-products>
+    </mat-drawer-content>
+  </mat-drawer-container>  -->
+ 
+ 
+ 
+  <mat-sidenav-container>
+      
+    <mat-sidenav mode="side" opened class="mat-elevation-z8">
+        <span style="margin-top: 20px;"> products   </span>
+        <br/>        
+        <button class="btn" (click)="ShowAll()" style="margin-top: 20px;">  All </button>
+        <br/>
+        <button class="btn" (click)="ShowSimple()" style="margin-top: 20px;"> Simple Tools</button>
+        <br/>
+        <button class="btn" (click)="ShowComplex()" style="margin-top: 20px;"> Complex Tools </button>
+    
+        </mat-sidenav>
+        <app-products></app-products>
+    </mat-sidenav-container>

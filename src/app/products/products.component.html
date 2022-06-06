@@ -1,0 +1,67 @@
+<div class="container">
+    <span style="margin-left: 120px;size:50px;font-weight: bold;">Products</span>
+    
+    <span><button mat-button style="background-color: #FDC754;height:25px;width: 120px; margin-left: 920px;border: none; ">Sync</button></span>
+
+</div>
+<mat-grid-list cols="3" rowHeight="2:1">
+    <!-- a try to handle filtering -->
+    <!-- <mat-grid-tile *ngFor="let item of products;">
+        <div *ngIf="getSimple();then content else other_content"></div>
+            <ng-template #content>
+                <div *ngIf="item.category == 'simple'">
+                    simple
+                    <div class="card">
+                      <button mat-button style="text-align:left; background-color: #89CFF0;border: none;color:white">Sync</button>
+                      <img mat-card-image class= "img-style" src="{{item.imageUrl}}"  alt="Photo of a tool">
+                      <div class="prodData">
+                          <mat-card-content >
+                              <span  class="data">{{item.name}}</span> 
+                              <br/> 
+                              <span >${{item.price}}</span> 
+                              
+                          </mat-card-content>
+                      </div>
+                    </div> 
+                  </div>
+            </ng-template>
+             //for complex
+            
+            <ng-template #other_content>
+                
+                <div *ngIf="item.category == 'complex'">
+                    <div class="card">
+                      <button mat-button style="text-align:left; background-color: #89CFF0;border: none;color:white">Sync</button>
+                      <img mat-card-image class= "img-style" src="{{item.imageUrl}}"  alt="Photo of a tool">
+                      <div class="prodData">
+                          <mat-card-content >
+                              <span  class="data">{{item.name}}</span> 
+                              <br/> 
+                              <span >${{item.price}}</span> 
+                              
+                          </mat-card-content>
+                      </div>
+                    </div> 
+                  </div>
+            </ng-template>
+         -->
+         <mat-grid-tile *ngFor="let item of products;">
+       <div >
+          <div class="card">
+            <button mat-button style="text-align:left; background-color: #89CFF0;border: none;color:white">Sync</button>
+            <img mat-card-image class= "img-style" src="{{item.imageUrl}}"  alt="Photo of a tool">
+            <div class="prodData">
+                <mat-card-content >
+                    <span  class="data">{{item.name}}</span> 
+                    <br/> 
+                    <span >${{item.price}}</span> 
+                    
+                </mat-card-content>
+            </div>
+          </div> 
+        </div>
+    </mat-grid-tile>
+    
+   
+  </mat-grid-list>
+
